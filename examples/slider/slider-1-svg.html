@@ -27,7 +27,7 @@
   <main>
     <h1>Horizontal Slider Example Using SVG</h1>
     <p>
-      Following is an example of a color picker that demonstrates the 
+      Following is an example of a color picker that demonstrates the
       <a href="../../#slider">slider design pattern.</a>
       Change the background color of the box below the picker by adjusting the sliders for red, green, and blue values.
       The HEX and RGB values of the chosen color are displayed by the color box.
@@ -35,13 +35,13 @@
     <p>Similar examples include: </p>
     <ul>
       <li>
-        <a href="slider-2.html">Slider Examples with aria-orientation and aria-valuetext</a>: 
+        <a href="slider-2.html">Slider Examples with aria-orientation and aria-valuetext</a>:
         Three thermostat control sliders that demonstrate using aria-orientation and aria-valuetext.
       </li>
     </ul>
     <section>
        <h2 id="ex_label">Example</h2>
-          <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>        
+          <div role="separator" id="ex_start_sep" aria-labelledby="ex_start_sep ex_label" aria-label="Start of"></div>
           <div id="ex1">
 		  <div>
             <div id="idSliders">
@@ -54,21 +54,19 @@
                        aria-valuenow="0"
                        aria-valuemax="255"
                        aria-labelledby="idRed"
-					   
+
 				<div><svg width="340" height="45">
-						<rect class="rail" x="13" y="10" rx="10" ry="50" width="275" height="15" opacity= "0.5"
-						style="fill:gray;stroke:black;stroke-width:5;" />
-						
-						<rect class="thumb" x="20" y="3" rx="100" ry="10" width="15" height="35"
-						style="fill:snow;stroke:dimgrey;stroke-width:5;"/>
-						
+						<rect class="rail" x="13" y="10" rx="10" ry="50"  />
+
+						<rect class="thumb red" x="20" y="3" rx="100" ry="10" />
+
 						<text class="value" x="300" y="25" fill="black">0</text>
-						
+
 						</svg></div>
 				</div>
 			</div>
-			
-			<div id="idSliders">		 
+
+			<div id="idSliders">
 				<div id="idGreen" class="label">Green</div>
 			<div class="aria-widget-slider"
                   id="idGreenValue"
@@ -78,16 +76,16 @@
                        aria-valuenow="0"
                        aria-valuemax="255"
                        aria-labelledby="idGreen"
-					  
+
 					<div><svg width="380" height="45">
 						<rect class="rail" x="13" y="10" rx="10" ry="50" width="275" height="15"
 						style="fill:gray;stroke:black;stroke-width:5;opacity:0.5" />
-						
+
 						<rect class="thumb" x="5" y="3" rx="100" ry="10" width="15" height="35"
 						style="fill:snow;stroke:dimgrey;stroke-width:5;" />
-						
+
 						<text class="value" x="300" y="25" fill="black">0</text>
-						
+
 					</svg></div>
 				</div>
 			</div>
@@ -101,7 +99,7 @@
                        aria-valuenow="0"
                        aria-valuemax="255"
                        aria-labelledby="idBlue"
-					   
+
 					   <div> <svg width="340" height="45">
 							<rect class="rail" x="13" y="10" rx="10" ry="50" width="275" height="15"
 							style="fill:gray;stroke:black;stroke-width:5;opacity:0.5" />
@@ -109,21 +107,21 @@
 							<rect class="thumb" x="5" y="3" rx="100" ry="10" width="15" height="35"
 							style="fill:snow;stroke:dimgrey;stroke-width:5;" />
 							<text class="value" x="300" y="25" fill="black"  >0</text>
-							
+
 						</svg>
 						</div>
                 </div>
 			</div>
 		</div>
-          
-		  
+
+
 
             <h3>Color Box</h3>
             <div id="idColorInfo">
               <div id="idColorBox"></div>
               <label>Color (HEX): <input type="text" readonly id="idColorValueHex" value=""></label>
               <label>Color (RGB): <input type="text" readonly id="idColorValueRGB" value=""></label>
-            </div>          
+            </div>
           <div role="separator" id="ex_end_sep" aria-labelledby="ex_end_sep ex_label" aria-label="End of"></div>
     </section>
 
